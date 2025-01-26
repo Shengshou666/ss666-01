@@ -22,11 +22,36 @@
     text-align:center;
    
     ">
-    <img src="https://i.imgs.ovh/2025/01/26/UYpU.gif" 
-         alt="UYpU.gif" border="0" width="66px"/>
     <p style="text-align:center">-</p>
     <p style="text-align:center">✟</p>
-    <p style="text-align:center">在这躺一下</p>
+<style>
+      .like2{
+        display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- 用两个盒子 -->
+    <div class="like" id="like">在这躺一下</div>
+<div class="like2" id="like2" ><a href="https://imgloc.com/image/UKV9"><img src="https://i.imgs.ovh/2025/01/26/UKV9.png" 
+alt="UKV9.png" border="0"width=44px /></a></div>
+<script>
+    var like = document.getElementById('like')
+    var like2 = document.getElementById('like2')
+    var ThumbsUp = true 
+    // 点1,1消失2出现
+    like.onclick = function () {
+    like.style.display="none"
+    like2.style.display="block"
+    }
+    // 点2,2消失1出现
+    like2.onclick = function () {
+    like.style.display="block"
+    like2.style.display="none"
+    }
+    </script>
+  </body>
+
     <p style="text-align:center">-</p>
     
     </div>
